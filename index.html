@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetMart - Your One-Stop Pet Store</title>
+    <style>
+        body {font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8;}
+        header {background: linear-gradient(90deg, #ffb347, #ffcc33); color: white; padding: 40px 20px; text-align: center; animation: fadeIn 1.5s ease-in;}
+        h1 {margin: 0; font-size: 2.5em;}
+        p {margin: 0; font-size: 1.2em;}
+        .section {padding: 20px; animation: fadeInUp 1.2s ease-in;}
+        .products {display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;}
+        .product {border: 1px solid #ddd; padding: 10px; width: 200px; text-align: center; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;}
+        .product:hover {transform: translateY(-5px); box-shadow: 0 8px 12px rgba(0,0,0,0.2);}
+        .product img {width: 100%; height: 150px; object-fit: cover; border-radius: 8px;}
+        .price {color: green; font-weight: bold;}
+        footer {background: #333; color: white; text-align: center; padding: 15px;}
+        button {background: #ff7f50; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; transition: background 0.3s;}
+        button:hover {background: #ff5722;}
+        @keyframes fadeIn {0% {opacity: 0;} 100% {opacity: 1;}}
+        @keyframes fadeInUp {0% {opacity: 0; transform: translateY(20px);} 100% {opacity: 1; transform: translateY(0);}}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PetMart</h1>
+        <p>Your One-Stop Pet Store – Everything Your Pets Need!</p>
+    </header>
+
+    <section class="section">
+        <h2>About Us</h2>
+        <p>At PetMart, we believe pets are family. We bring you the finest food, accessories, toys, grooming products, and healthcare essentials for dogs, cats, birds, and fish.</p>
+    </section>
+
+    <section class="section">
+        <h2>Special Offers</h2>
+        <ul>
+            <li>Dog Essentials – Up to 20% off on food & grooming kits</li>
+            <li>Cat Care – Buy 2 toys, get 1 free</li>
+            <li>Bird Feed – Flat 15% off on bulk orders</li>
+            <li>Aquarium Specials – Free water conditioner with every purchase</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Dogs</h2>
+        <div class="products">
+            <div class="product"><img src="https://place-puppy.com/200x150" alt=""><h3>Dog Food Premium</h3><p class="price">₹499</p><button>Buy Now</button></div>
+            <div class="product"><img src="https://place-puppy.com/201x150" alt=""><h3>Dog Collar</h3><p class="price">₹299</p><button>Buy Now</button></div>
+            <div class="product"><img src="https://place-puppy.com/202x150" alt=""><h3>Dog Chew Toy</h3><p class="price">₹199</p><button>Buy Now</button></div>
+            <div class="product"><img src="https://place-puppy.com/203x150" alt=""><h3>Dog Bed</h3><p class="price">₹899</p><button>Buy Now</button></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Cats</h2>
+        <div class="products">
+            <div class="product"><img src="https://placekitten.com/200/150" alt=""><h3>Cat Food Deluxe</h3><p class="price">₹399</p><button>Buy Now</button></div>
+            <div class="product"><img src="https://placekitten.com/201/150" alt=""><h3>Cat Scratching Post</h3><p class="price">₹599</p><button>Buy Now</button></div>
+            <div class="product"><img src="https://placekitten.com/202/150" alt=""><h3>Cat Litter Box</h3><p class="price">₹349</p><button>Buy Now</button></div>
+            <div class="product"><img src="https://placekitten.com/203/150" alt=""><h3>Cat Toy Mouse</h3><p class="price">₹149</p><button>Buy Now</button></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Birds</h2>
+        <div class="products">
+            <div class="product"><img src="https://loremflickr.com/200/150/bird" alt=""><h3>Bird Cage</h3><p class="price">₹1299</p><button>Buy Now</button></div>
+            <div class="product"><img src="https://loremflickr.com/201/150/bird" alt=""><h3>Bird Seed Mix</h3><p class="price">₹199</p><button>Buy Now</button></div>
+            <div class="product"><img src="https://loremflickr.com/202/150/bird" alt=""><h3>Bird Feeder</h3><p class="price">₹299</p><button>Buy Now</button></div>
+            <div class="product"><img src="https://loremflickr.com/203/150/bird" alt=""><h3>Bird Bath</h3><p class="price">₹399</p><button>Buy Now</button></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Fish & Aquarium</h2>
+        <div class="products">
+            <div class="product"><img src="https://loremflickr.com/200/150/fish" alt=""><h3>Fish Food</h3><p class="price">₹99</p><button>Buy Now</button></div>
+            <div class="product"><img src="https://loremflickr.com/201/150/fish" alt=""><h3>Water Filter</h3><p class="price">₹799</p><button>Buy Now</button></div>
+            <div class="product"><img src="https://loremflickr.com/202/150/fish" alt=""><h3>Decorative Plants</h3><p class="price">₹249</p><button>Buy Now</button></div>
+            <div class="product"><img src="https://loremflickr.com/203/150/fish" alt=""><h3>Aquarium Light</h3><p class="price">₹499</p><button>Buy Now</button></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PetMart. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
